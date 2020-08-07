@@ -11,4 +11,9 @@ elementsButton.click(() => {
     console.log(sandbox.html())
 })
 
+selectorButton.click(() => {
+    console.log(sandbox.find(`${selectorInput.val()}`))
+    console.log(selectorInput.val())
+})
+
 elementsInput.val(sandbox.html())
