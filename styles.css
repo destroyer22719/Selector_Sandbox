@@ -1,15 +1,38 @@
 
 *{
     margin-left: 10px;
+    text-align: center;    ;
+}
+body{
+    background-color:rgb(230, 230, 230);
+}
+h1, h3, h4{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Recursive', sans-serif;
+}
+div{
+    font-family: 'Roboto', sans-serif;
 }
 .btn{
     font-size: 20px !important;
     display: inline;
-    background-color: green;
+    background-color: rgb(75, 255, 75);
     padding: 10px;
     cursor: pointer;
+    margin-right: 2.5px !important;
 }
-.btn:hover{
+.btn-clear{
+    font-size: 20px !important;
+    display: inline;
+    background-color: rgb(255, 75, 75);
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 2.5px !important;
+
+}
+.btn:hover, .btn-clear:hover{
     text-decoration: underline;
 }
 .grid{
@@ -39,7 +62,25 @@
     margin: 10px;
     width:97%;
     height: 150px;
-    overflow: auto;
     background-color: lightgray;
     border: 10px solid darkslategray;
+    display: flex;
+    flex-direction: column;
+}
+#sandbox > * {
+    flex-grow: 1;
+    border: 2px solid red;
+    margin: 0px;
+}
+#output{
+    margin: 10px;
+    width:97%;
+    height: 150px;
+    background-color: lightgray;
+    border: 10px solid darkslategray;
+}
+textarea{
+    height: 50px;
+    width: 300px;
+    font-size: 12px !important;
 }

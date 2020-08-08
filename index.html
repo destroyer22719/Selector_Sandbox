@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Selector Sandbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Recursive&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Selector Sandbox</h1>
@@ -17,17 +18,25 @@
             <label for="selector">Add Selectors</label>
             <input name ="selector" id="selectorInput" placeholder="eg: div">
             <div class="btn" id="addSelector">Find Selector</div>
+            <div class="btn-clear" id="clearSelector">Clear Selector</div>
+
+            <h3>Selectors Found: <span id="selectorsFound">0</span></h3>
         </div>
 
         <div id="element">
             <label for="elements">Add Elements</label>
             <textarea name="elements" id="elementsInput" placeholder="eg:<div></div>"></textarea>
             <div class="btn" id="addElement">Add Element</div>
+            <div class="btn-clear" id="clearElement">Clear HTML</div>
         </div>
     </div>
-    <h3>Found Selectors: <span id="selectorsFound">0</span></h3>
+    <h3>All selectors will be searched for in the sandbox below</h3>
+    <p>
+        Unselected elements will have a red border while selected elements will have a green border
+    </p>
+    <h3>Sandbox:</h3>
     <div id="sandbox">
-        <div>All selectors will be searched for in this box</div>
+        <div>Hello World!</div>
     </div>
     <script src="index.js"></script>
 </body>
