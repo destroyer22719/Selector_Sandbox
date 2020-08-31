@@ -15,14 +15,11 @@ const clearElement = $("#clearElement");
 
 //add elements
 elementsButton.click(() => {
-    sandbox.html(elementsInput.val());
-    console.log(sandbox.children().length);
+    let newVal =elementsInput.val().trim() 
+    sandbox.html(newVal);
     
-    //expands height of sandbox when there are enough children elements
-    if(sandbox.children().length >= 3){
-        console.log('adding')
-        sandbox.css("height","+=150px")
-    }
+    //expands height of sandbox relative to child element length
+    sandbox.height(sandbox.children().length * 50 )
 })
 
 //finds selector elements

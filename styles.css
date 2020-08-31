@@ -22,6 +22,8 @@ div{
     padding: 10px;
     cursor: pointer;
     margin-right: 2.5px !important;
+    border-radius: 10px;
+
 }
 .btn-clear{
     font-size: 20px !important;
@@ -30,7 +32,7 @@ div{
     padding: 10px;
     cursor: pointer;
     margin-left: 2.5px !important;
-
+    border-radius: 10px;
 }
 .btn:hover, .btn-clear:hover{
     text-decoration: underline;
@@ -61,7 +63,7 @@ div{
 #sandbox{
     margin: 10px;
     width:97%;
-    height: 150px;
+    height: 50px;
     background-color: lightgray;
     border: 10px solid darkslategray;
     display: flex;
