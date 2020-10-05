@@ -31,3 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      # Get the tag
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
