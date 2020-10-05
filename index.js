@@ -41,4 +41,3 @@ clearElement.click(() => {
 
 //set html of sandbox to elements textarea
 elementsInput.val(sandbox.html())
-
