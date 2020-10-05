@@ -22,7 +22,6 @@ elementsButton.click(() => {
     sandbox.height(sandbox.children().length * 50 )
 })
 
-
 //finds selector elements
 selectorButton.click(() => {
     let selectorFound = sandbox.find(`${selectorInput.val()}`)
